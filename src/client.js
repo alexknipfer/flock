@@ -1,11 +1,14 @@
 import BrowserRouter from 'react-router-dom/BrowserRouter'
 import Home from './components/Home/Home'
+import Layout from './components/Layout/Layout'
 import React from 'react'
 import { render } from 'react-dom'
 
 render(
   <BrowserRouter>
-    <Home />
+    <Layout>
+      <Home />
+    </Layout>
   </BrowserRouter>,
   document.getElementById('root')
 )
