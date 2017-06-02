@@ -1,6 +1,6 @@
 import { StaticRouter, matchPath } from 'react-router-dom'
 
-import App from './App'
+import Home from '../components/Home/Home'
 import React from 'react'
 import express from 'express'
 import path from 'path'
@@ -16,7 +16,7 @@ server
     const context = {}
     const markup = renderToString(
       <StaticRouter context={context} location={req.url}>
-        <App />
+        <Home />
       </StaticRouter>
     )
 
